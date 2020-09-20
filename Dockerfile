@@ -8,8 +8,8 @@ FROM maven:3.6-jdk-11-slim as WAR
 RUN apt-get update && apt-get -y install git wget bash -y openssh-client
 ENV APP_NAME=taskSvn
 ENV APP_VERSION=0.0.1-SNAPSHOT
-RUN git clone https://github.com/loveyraturi/BpoSystem.git
-WORKDIR /BpoSystem
+RUN git clone https://github.com/loveyraturi/kafkaSample.git
+WORKDIR /kafkaSample
 RUN mvn clean install -DskipTests 
 RUN mv target/${APP_NAME}-${APP_VERSION}.war /microapp.war
 
