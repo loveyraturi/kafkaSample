@@ -29,7 +29,7 @@ import org.simpleflatmapper.csv.CsvReader;
 import org.springframework.web.multipart.MultipartFile;
 
 @RestController
-@RequestMapping("/realestate")
+@RequestMapping("/praveenapp")
 public class EngineController {
 	@Autowired
 	Producer producer;
